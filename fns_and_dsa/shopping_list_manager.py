@@ -8,22 +8,22 @@ def display_menu():
 def add_item(shopping_list):
     item = input("Enter the item to add: ")
     shopping_list.append(item)
-    print(g"'{item}' has been added to the list.")
+    print(f"'{item}' has been added to the list.")
 
 def remove_item(shopping_list):
     item = input("Enter the name of the item to remove: ")
-     if item in shopping_list:
-         shopping_list.remove(item)
-         print(f"'{item}' has been removed from the list.")
+    if item in shopping_list:
+        shopping_list.remove(item)
+        print(f"'{item}' has been removed from the list.")
     else:
         print(f"Item '{item}' not found in the list.")
 
 def view_list(shopping_list):
      if shopping_list:
          print("Shopping List:")
-        for item in shopping_list:
+         for item in shopping_list:
             print(f"- {item}")
-    else:
+     else:
         print("Your shopping list is currently empty.")
 
 def main():
